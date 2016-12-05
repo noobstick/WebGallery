@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/libs/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-controller="homeCtrl as vm">
+
+    <div>
+        <header title="Main Header"></header>
+    </div>
+
+    <div>
+        <nav-test title="Nav Title"></nav-test>
+    </div>
+    <p>{{vm.title}}</p>
+
+    <div>
+        <footer title="Footer"></footer>
+    </div>
+
+    <script src="scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="app/components/home/homeCtrl.js"></script>
+
+    <script src="app/components/core/header/header.controller.js"></script>
+    <script src="app/components/core/header/header.component.js"></script>
+
+    <script src="app/components/core/navigation/navigation.controller.js"></script>
+    <script src="app/components/core/navigation/navigation.component.js"></script>
+    <script src="app/components/core/navigation/navigation.service.js"></script>
+
+    <script src="app/components/core/footer/footer.controller.js"></script>
+    <script src="app/components/core/footer/footer.component.js"></script>
+
+
+
+
+</body>
+</html>
