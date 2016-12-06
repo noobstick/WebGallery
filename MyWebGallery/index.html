@@ -17,13 +17,17 @@
         <nav-test title="Nav Title"></nav-test>
     </div>
     <p>{{vm.title}}</p>
-
+    <a ui-sref="admin" ui-sref-active="active">Admin</a>
+    <ui-view></ui-view>
     <div>
         <footer title="Footer"></footer>
     </div>
 
     <script src="scripts/angular.min.js"></script>
+    <script src="scripts/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
     <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.config.js" />
     <Content Include="app\components\core\navigation\navigation.component.js" />
     <Content Include="app\components\core\navigation\navigation.controller.js" />
     <Content Include="app\components\core\navigation\navigation.service.js" />
@@ -119,7 +120,6 @@
     <Content Include="app\components\core\header\header.component.js" />
     <Content Include="app\components\core\header\views\header.html" />
     <Content Include="app\components\home\homeCtrl.js" />
-    <Content Include="app\main.js" />
     <Content Include="index.html" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
