@@ -27,7 +27,7 @@
             var deferred = $q.defer();
             $http({
                 method: 'GET',
-                url: 'api/Images/'
+                url: 'api/Images/1'
             }).success(function(data, status, headers, config){
                 deferred.resolve(data);
             }).error(function(data, status, headers, config){
