@@ -14,8 +14,9 @@
         init();
 
         function init() {
+            var imageId = 1;
             vm.navLinks = navService.getNavLinks();
-            vm.images = navService.getAllImages();
+            vm.images = navService.getAllImages(1);
         }
     }
 })();
