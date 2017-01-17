@@ -13,29 +13,12 @@
 
         var service = {
             getNavLinks: getNavLinks,
-            getAllImages: getAllImages
         }
 
         return service;
 
         function getNavLinks() {
             return navLinks;
-        }
-
-        function getAllImages() {
-
-            var deferred = $q.defer();
-            $http({
-                method: 'GET',
-                url: 'api/Images/'
-            }).success(function(data, status, headers, config){
-                deferred.resolve(data);
-            }).error(function(data, status, headers, config){
-                deferred.reject(data);
-            })
-
-            return deferred.promise;
-               
         }
     }
 

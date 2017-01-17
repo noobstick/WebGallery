@@ -112,10 +112,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.config.js" />
+    <Content Include="app\components\gallery\gallery.component.js" />
+    <Content Include="app\components\gallery\gallery.controller.js" />
+    <Content Include="app\components\gallery\gallery.service.js" />
+    <Content Include="app\components\gallery\views\gallery.html" />
     <Content Include="app\components\core\navigation\navigation.component.js" />
     <Content Include="app\components\core\navigation\navigation.controller.js" />
     <Content Include="app\components\core\navigation\navigation.service.js" />
     <Content Include="app\components\core\navigation\views\navigation.html" />
+    <Content Include="app\components\image\image.component.js" />
+    <Content Include="app\components\image\image.controller.js" />
+    <Content Include="app\components\image\image.service.js" />
+    <Content Include="app\components\image\views\image.html" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -144,7 +152,9 @@
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />

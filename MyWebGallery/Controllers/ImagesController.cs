@@ -1,6 +1,7 @@
 ﻿using MyWebGallery.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web.Http;
 
@@ -20,7 +21,14 @@ namespace MyWebGallery.Controllers
         [Route("")]
         public IEnumerable<Image> GetAllImages()
         {
-            return images;    
+            DirectoryInfo d = new DirectoryInfo(@"C:\Users\sniperxp716\Documents\Visual Studio 2015\Projects\MyWebGallery\MyWebGallery\assets\img");
+            var imageNames = d.GetFiles("*.jpg");
+            List<Image> test = new List<Image>();
+            foreach (FileInfo image in imageNames) {
+
+                test.Add(new Image { Id = 1, Name = image.Name, CreatedDate = DateTime.Now});
+            }
+            return test;    
         }
 
         [HttpGet]
