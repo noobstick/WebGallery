@@ -21,7 +21,9 @@ namespace MyWebGallery.Controllers
         [Route("")]
         public IEnumerable<Image> GetAllImages()
         {
-            DirectoryInfo d = new DirectoryInfo(@"C:\Users\sniperxp716\Documents\Visual Studio 2015\Projects\MyWebGallery\MyWebGallery\assets\img");
+            var imgPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"assets\img");
+            //DirectoryInfo d = new DirectoryInfo(@"..\MyWebGallery\MyWebGallery\assets\img");
+            DirectoryInfo d = new DirectoryInfo(imgPath);
             var imageNames = d.GetFiles("*.jpg");
             List<Image> test = new List<Image>();
             foreach (FileInfo image in imageNames) {
