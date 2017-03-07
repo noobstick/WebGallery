@@ -1,0 +1,14 @@
+﻿body {
+    background-color:darkgray;
+}
+.gallery {
+    background-color:darkgray;
+}
+.sm-img {
+    width:150px;
+    height:150px;
+}
+.img-container {
+    display:flex;
+}
+

@@ -124,6 +124,7 @@
     <Content Include="app\components\image\image.controller.js" />
     <Content Include="app\components\image\image.service.js" />
     <Content Include="app\components\image\views\image.html" />
+    <Content Include="assets\css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="scripts\angular.min.js.map" />
@@ -166,7 +167,6 @@
   <ItemGroup>
     <Folder Include="app\shared\" />
     <Folder Include="App_Data\" />
-    <Folder Include="assets\css\" />
     <Folder Include="assets\img\" />
     <Folder Include="assets\js\" />
     <Folder Include="assets\libs\" />

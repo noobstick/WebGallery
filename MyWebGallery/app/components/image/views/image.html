@@ -1,10 +1,8 @@
 ﻿<p>{{$ctrl.title}}</p>
 
-<div>
-        Image components
+<div class="img-container">
     <div ng-repeat="image in $ctrl.images">
-        
-        <img ng-src="assets/img/{{image.Name}}" width="150" height="150" />
+        <img class="sm-img" ng-src="assets/img/{{image.Name}}" />
     </div>
     <div>
        
